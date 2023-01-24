@@ -32,7 +32,8 @@ public class Aluno {
     }
 
     public String getNome() {
-        return nome;
+
+         return nome;
     }
 
     public void setNome(String nome) {
@@ -148,25 +149,42 @@ public class Aluno {
          return (nota1 + nota2 + nota3 + nota4) /4;
     }
 
-    public boolean getAlunoAprovado(){
+    /*public boolean getAlunoAprovado(){
         double media = this.getMediaNota();
         if(media >= 70){
             return true;
         }
         else {
             return false;
-        }
+        }*/
 
-        /*public String getAlunoAprovado2(){
+        public String getAlunoAprovado2(){
         double media = this.getMediaNota();
         if(media >= 70){
             return "Aluno está aprovado";
         }
         else {
             return "Aluno está reprovado";
-        }*/
+        }
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", registroGeral='" + registroGeral + '\'' +
+                ", numeroCpf='" + numeroCpf + '\'' +
+                ", nomeMae='" + nomeMae + '\'' +
+                ", nomePai='" + nomePai + '\'' +
+                ", dataMatricula='" + dataMatricula + '\'' +
+                ", nomeEscola='" + nomeEscola + '\'' +
+                ", serieMatriculado='" + serieMatriculado + '\'' +
+                ", nota1=" + nota1 +
+                ", nota2=" + nota2 +
+                ", nota3=" + nota3 +
+                ", nota4=" + nota4 +
+                '}';
+    }
 }

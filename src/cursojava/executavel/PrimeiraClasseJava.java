@@ -29,7 +29,7 @@ public class PrimeiraClasseJava {
         Aluno aluno1 = new Aluno();
 
         aluno1.setNome(nome);
-        aluno1.setIdade(Integer.valueOf(idade));
+        aluno1.setIdade(Integer.parseInt(idade));
         aluno1.setDataNascimento(dataNascimento);
         aluno1.setRegistroGeral(rg);
         aluno1.setNumeroCpf(cpf);
@@ -43,20 +43,12 @@ public class PrimeiraClasseJava {
         aluno1.setNota3(Double.parseDouble(nota3));
         aluno1.setNota4(Double.parseDouble(nota4));
 
+        System.out.println(aluno1.toString());
+        System.out.println("Média do aluno = " + aluno1.getMediaNota());
+        System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
 
 
-        System.out.println("Nome : " + aluno1.getNome());
-        System.out.println("Idade : " + aluno1.getIdade());
-        System.out.println("Data de nascimento : " +aluno1.getDataNascimento());
-        System.out.println("RG: " +aluno1.getRegistroGeral());
-        System.out.println("CPF: " +aluno1.getNumeroCpf());
-        System.out.println("nome da mãe: " +aluno1.getNomeMae());
-        System.out.println("nome do pai: " +aluno1.getNomePai());
-        System.out.println("Matrícula: " +aluno1.getDataMatricula());
-        System.out.println("Escola: " +aluno1.getNomeEscola());
-        System.out.println("Série: " +aluno1.getSerieMatriculado());
-        System.out.println("A média do aluno foi de: " + aluno1.getMediaNota());
-        System.out.println("Resultado: " + (aluno1.getAlunoAprovado()? "Aprovado" : "Reprovado"));
+
 
     }
 }

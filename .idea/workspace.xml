@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f7670e-345d-4eef-be8c-0431c7d8dc0a" name="Changes" comment="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters.">
+    <list default="true" id="a4f7670e-345d-4eef-be8c-0431c7d8dc0a" name="Changes" comment="Implementação de interação usuário.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cursojava/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/classes/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cursojava/executavel/PrimeiraClasseJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/executavel/PrimeiraClasseJava.java" afterDir="false" />
@@ -36,25 +39,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gabri/git/repository/untitled",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "inlay.hints",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="pjtaluno" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="pjtaluno" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674420914357</updated>
-      <workItem from="1674420915823" duration="10654000" />
+      <workItem from="1674420915823" duration="11120000" />
+      <workItem from="1674515136534" duration="1804000" />
     </task>
     <task id="LOCAL-00001" summary="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters.">
       <created>1674428162305</created>
@@ -72,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674428162305</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementação de interação usuário.">
+      <created>1674432513287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674432513287</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters." />
-    <option name="LAST_COMMIT_MESSAGE" value="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters." />
+    <MESSAGE value="Implementação de interação usuário." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação de interação usuário." />
   </component>
 </project>
