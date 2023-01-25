@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f7670e-345d-4eef-be8c-0431c7d8dc0a" name="Changes" comment="Implementação de interação usuário.">
+    <list default="true" id="a4f7670e-345d-4eef-be8c-0431c7d8dc0a" name="Changes" comment="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString.">
+      <change afterPath="$PROJECT_DIR$/src/cursojava/classes/Disciplina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cursojava/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/classes/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cursojava/executavel/PrimeiraClasseJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/executavel/PrimeiraClasseJava.java" afterDir="false" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -34,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/gabri/git/repository/untitled",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabri/git/repository/untitled&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +63,10 @@
       <option name="presentableId" value="Default" />
       <updated>1674420914357</updated>
       <workItem from="1674420915823" duration="11120000" />
-      <workItem from="1674515136534" duration="1804000" />
+      <workItem from="1674515136534" duration="4910000" />
+      <workItem from="1674577028086" duration="680000" />
+      <workItem from="1674596169106" duration="16000" />
+      <workItem from="1674602632067" duration="2380000" />
     </task>
     <task id="LOCAL-00001" summary="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters.">
       <created>1674428162305</created>
@@ -73,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674432513287</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString.">
+      <created>1674521081328</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674521081328</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,10 +105,26 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters." />
     <MESSAGE value="Implementação de interação usuário." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação de interação usuário." />
+    <MESSAGE value="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString." />
   </component>
 </project>

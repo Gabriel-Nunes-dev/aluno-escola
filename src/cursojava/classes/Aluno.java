@@ -1,5 +1,7 @@
 package cursojava.classes;
 
+import java.util.Objects;
+
 public class Aluno {
 
      String nome;
@@ -13,23 +15,20 @@ public class Aluno {
      String nomeEscola;
      String serieMatriculado;
 
-     double nota1;
-     double nota2;
-     double nota3;
-     double nota4;
-
-     public Aluno(String nomePadrao){
-         nome = nomePadrao;
-     }
-
-     public Aluno (String nomePadrao, int idadePadrao){
-         nome = nomePadrao;
-         idade = idadePadrao;
-     }
+     Disciplina disciplina;
 
     public Aluno() {
-
+        disciplina = new Disciplina();
     }
+
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    public Disciplina getDisciplina() {
+        return disciplina;
+    }
+
 
     public String getNome() {
 
@@ -112,41 +111,10 @@ public class Aluno {
         this.serieMatriculado = serieMatriculado;
     }
 
-    public double getNota1() {
-        return nota1;
-    }
-
-    public void setNota1(double nota1) {
-        this.nota1 = nota1;
-    }
-
-    public double getNota2() {
-        return nota2;
-    }
-
-    public void setNota2(double nota2) {
-        this.nota2 = nota2;
-    }
-
-    public double getNota3() {
-        return nota3;
-    }
-
-    public void setNota3(double nota3) {
-        this.nota3 = nota3;
-    }
-
-    public double getNota4() {
-        return nota4;
-    }
-
-    public void setNota4(double nota4) {
-        this.nota4 = nota4;
-    }
 
        /*Método que retorna média do aluno*/
     public double getMediaNota(){
-         return (nota1 + nota2 + nota3 + nota4) /4;
+         return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota2() + disciplina.getNota4()) /4;
     }
 
     /*public boolean getAlunoAprovado(){
@@ -169,6 +137,20 @@ public class Aluno {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return idade == aluno.idade && Objects.equals(nome, aluno.nome) && Objects.equals(dataNascimento, aluno.dataNascimento) && Objects.equals(registroGeral, aluno.registroGeral) && Objects.equals(numeroCpf, aluno.numeroCpf) && Objects.equals(nomeMae, aluno.nomeMae) && Objects.equals(nomePai, aluno.nomePai) && Objects.equals(dataMatricula, aluno.dataMatricula) && Objects.equals(nomeEscola, aluno.nomeEscola) && Objects.equals(serieMatriculado, aluno.serieMatriculado) && Objects.equals(disciplina, aluno.disciplina);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, idade, dataNascimento, registroGeral, numeroCpf, nomeMae, nomePai, dataMatricula, nomeEscola, serieMatriculado, disciplina);
+    }
+
+
+    @Override
     public String toString() {
         return "Aluno{" +
                 "nome='" + nome + '\'' +
@@ -181,10 +163,9 @@ public class Aluno {
                 ", dataMatricula='" + dataMatricula + '\'' +
                 ", nomeEscola='" + nomeEscola + '\'' +
                 ", serieMatriculado='" + serieMatriculado + '\'' +
-                ", nota1=" + nota1 +
-                ", nota2=" + nota2 +
-                ", nota3=" + nota3 +
-                ", nota4=" + nota4 +
+                ", disciplina=" + disciplina +
                 '}';
     }
+
+
 }
