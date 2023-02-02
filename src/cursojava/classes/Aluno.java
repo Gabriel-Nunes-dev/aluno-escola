@@ -1,24 +1,32 @@
 package cursojava.classes;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Aluno {
 
-     String nome;
-     int idade;
-     String dataNascimento;
-     String registroGeral;
-     String numeroCpf;
-     String nomeMae;
-     String nomePai;
-     String dataMatricula;
-     String nomeEscola;
-     String serieMatriculado;
+    String nome;
+    int idade;
+    String dataNascimento;
+    String registroGeral;
+    String numeroCpf;
+    String nomeMae;
+    String nomePai;
+    String dataMatricula;
+    String nomeEscola;
+    String serieMatriculado;
 
-     Disciplina disciplina;
+    Disciplina disciplina;
 
-    public Aluno() {
-        disciplina = new Disciplina();
+    private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
     }
 
     public void setDisciplina(Disciplina disciplina) {
@@ -29,10 +37,9 @@ public class Aluno {
         return disciplina;
     }
 
-
     public String getNome() {
 
-         return nome;
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -111,61 +118,55 @@ public class Aluno {
         this.serieMatriculado = serieMatriculado;
     }
 
+    /* Método que retorna média do aluno */
+    public double getMediaNota() {
 
-       /*Método que retorna média do aluno*/
-    public double getMediaNota(){
-         return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota2() + disciplina.getNota4()) /4;
+        double somaNotas = 0.0;
+
+        for (Disciplina disciplina : disciplinas
+        ) {
+            somaNotas += disciplina.getNota();
+
+        }
+        return somaNotas / disciplinas.size();
     }
 
-    /*public boolean getAlunoAprovado(){
+    public String getAlunoAprovado() {
         double media = this.getMediaNota();
-        if(media >= 70){
-            return true;
-        }
-        else {
-            return false;
-        }*/
-
-        public String getAlunoAprovado2(){
-        double media = this.getMediaNota();
-        if(media >= 70){
+        if (media >= 70) {
             return "Aluno está aprovado";
-        }
-        else {
+        } else {
             return "Aluno está reprovado";
         }
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Aluno aluno = (Aluno) o;
-        return idade == aluno.idade && Objects.equals(nome, aluno.nome) && Objects.equals(dataNascimento, aluno.dataNascimento) && Objects.equals(registroGeral, aluno.registroGeral) && Objects.equals(numeroCpf, aluno.numeroCpf) && Objects.equals(nomeMae, aluno.nomeMae) && Objects.equals(nomePai, aluno.nomePai) && Objects.equals(dataMatricula, aluno.dataMatricula) && Objects.equals(nomeEscola, aluno.nomeEscola) && Objects.equals(serieMatriculado, aluno.serieMatriculado) && Objects.equals(disciplina, aluno.disciplina);
+        return idade == aluno.idade && Objects.equals(nome, aluno.nome)
+                && Objects.equals(dataNascimento, aluno.dataNascimento)
+                && Objects.equals(registroGeral, aluno.registroGeral) && Objects.equals(numeroCpf, aluno.numeroCpf)
+                && Objects.equals(nomeMae, aluno.nomeMae) && Objects.equals(nomePai, aluno.nomePai)
+                && Objects.equals(dataMatricula, aluno.dataMatricula) && Objects.equals(nomeEscola, aluno.nomeEscola)
+                && Objects.equals(serieMatriculado, aluno.serieMatriculado)
+                && Objects.equals(disciplina, aluno.disciplina);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, idade, dataNascimento, registroGeral, numeroCpf, nomeMae, nomePai, dataMatricula, nomeEscola, serieMatriculado, disciplina);
+        return Objects.hash(nome, idade, dataNascimento, registroGeral, numeroCpf, nomeMae, nomePai, dataMatricula,
+                nomeEscola, serieMatriculado, disciplina);
     }
-
 
     @Override
     public String toString() {
-        return "Aluno{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", dataNascimento='" + dataNascimento + '\'' +
-                ", registroGeral='" + registroGeral + '\'' +
-                ", numeroCpf='" + numeroCpf + '\'' +
-                ", nomeMae='" + nomeMae + '\'' +
-                ", nomePai='" + nomePai + '\'' +
-                ", dataMatricula='" + dataMatricula + '\'' +
-                ", nomeEscola='" + nomeEscola + '\'' +
-                ", serieMatriculado='" + serieMatriculado + '\'' +
-                ", disciplina=" + disciplina +
-                '}';
+        return "Aluno{" + "nome='" + nome + '\'' + ", idade=" + idade + ", dataNascimento='" + dataNascimento + '\''
+                + ", registroGeral='" + registroGeral + '\'' + ", numeroCpf='" + numeroCpf + '\'' + ", nomeMae='"
+                + nomeMae + '\'' + ", nomePai='" + nomePai + '\'' + ", dataMatricula='" + dataMatricula + '\''
+                + ", nomeEscola='" + nomeEscola + '\'' + ", serieMatriculado='" + serieMatriculado + '\'' + '}';
     }
-
-
 }

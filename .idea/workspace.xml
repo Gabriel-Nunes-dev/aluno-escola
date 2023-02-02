@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f7670e-345d-4eef-be8c-0431c7d8dc0a" name="Changes" comment="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString.">
-      <change afterPath="$PROJECT_DIR$/src/cursojava/classes/Disciplina.java" afterDir="false" />
+    <list default="true" id="a4f7670e-345d-4eef-be8c-0431c7d8dc0a" name="Changes" comment="Criado a Classe Disciplina, dividindo atributos entre as classes, gerados métodos Getters and Setters, Equals e HashCode e ToString.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cursojava/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/classes/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cursojava/classes/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/classes/Disciplina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cursojava/executavel/PrimeiraClasseJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cursojava/executavel/PrimeiraClasseJava.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="media001" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +67,14 @@
       <workItem from="1674515136534" duration="4910000" />
       <workItem from="1674577028086" duration="680000" />
       <workItem from="1674596169106" duration="16000" />
-      <workItem from="1674602632067" duration="2380000" />
+      <workItem from="1674602632067" duration="4922000" />
+      <workItem from="1674730750395" duration="242000" />
+      <workItem from="1674907675676" duration="434000" />
+      <workItem from="1675078002993" duration="1248000" />
+      <workItem from="1675086789597" duration="4000" />
+      <workItem from="1675168584775" duration="174000" />
+      <workItem from="1675169260849" duration="4964000" />
+      <workItem from="1675196809030" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters.">
       <created>1674428162305</created>
@@ -89,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674521081328</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Criado a Classe Disciplina, dividindo atributos entre as classes, gerados métodos Getters and Setters, Equals e HashCode e ToString.">
+      <created>1674605223053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674605223053</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +140,7 @@
     <MESSAGE value="Instânciação, referência e atributos.&#10;&#10;criação de métodos getters e setters." />
     <MESSAGE value="Implementação de interação usuário." />
     <MESSAGE value="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString." />
-    <option name="LAST_COMMIT_MESSAGE" value="Criacção de método para calcular média e retornar resultado.&#10;Implementação de ToString." />
+    <MESSAGE value="Criado a Classe Disciplina, dividindo atributos entre as classes, gerados métodos Getters and Setters, Equals e HashCode e ToString." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criado a Classe Disciplina, dividindo atributos entre as classes, gerados métodos Getters and Setters, Equals e HashCode e ToString." />
   </component>
 </project>
